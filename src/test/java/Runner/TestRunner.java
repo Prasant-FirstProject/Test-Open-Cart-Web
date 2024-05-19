@@ -8,7 +8,8 @@ import org.testng.annotations.DataProvider;
         glue = {"org.opencart.stepDifination"},
         plugin = {"pretty","html:target/cucumber-reports","json:target/cucumber.json"},
         monochrome = true,
-        publish = true)
+        publish = true,
+        tags = "@Login")
 public class TestRunner extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
